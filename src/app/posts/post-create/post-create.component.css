@@ -1,0 +1,13 @@
+matcard{
+  width:100%;
+}
+.textarea{
+  width:100%;
+}
+input[type="file"]{
+  visibility:hidden ;
+}
+.imgpreview{
+  height: 80px;
+  width: 80px;
+}

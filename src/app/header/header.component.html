@@ -1,0 +1,43 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a  class="navbar-brand">PostsApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li>
+      <a *ngIf="userAuthenticated" [routerLink]="['/create']" routerLinkActive="router-link-active">
+        New Post
+      </a>
+
+
+    </li>
+
+    <li>
+      <a *ngIf="userAuthenticated"  [routerLink]="['/']" routerLinkActive="router-link-active">Posts</a> 
+    </li>
+  </ul>
+
+    <ul class="nav navbar-nav navbar-right" >
+    <li>
+      <a *ngIf="!userAuthenticated"   [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> 
+    </li>
+    <li>
+      <a *ngIf="!userAuthenticated" [routerLink]="['/signup']" routerLinkActive="router-link-active">SignUp</a> 
+    </li>
+    <li>
+      <button *ngIf="userAuthenticated"   (click)="onLogout()">Logout</button>
+    </li>
+    </ul>
+
+    
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+

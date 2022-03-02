@@ -1,0 +1,10 @@
+:host{
+  display: block;
+  margin-top:1rem;
+
+}
+.post-image img{
+  width:60%;
+  height: 30%;
+  box-shadow: 1px 1px 3px;
+}
